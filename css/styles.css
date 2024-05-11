@@ -149,3 +149,7 @@ a {
 .shadowbox {
     box-shadow: 0 -5px 5px -5px #333;
 }
+
+.margin-left {
+    margin-left: 5px;
+}

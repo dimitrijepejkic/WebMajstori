@@ -19,7 +19,7 @@
 
     <!-- SEO -->
     <meta name="keywords"
-        content="kreiranje sajta, pravljenje sajta, pravljenje sajta za firmu, kako napraviti sajt, programer za sajt, kako napraviti sajt besplatno, izdrada sajta, sajt, sajtova">
+        content="kreiranje sajta, pravljenje sajta, pravljenje sajta za firmu, kako napraviti sajt, programer za sajt, kako napraviti sajt besplatno, izdrada sajta, sajt, sajtova, webmajstori">
     <meta name="description" content="Naša misija je pružiti vam vrhunski dizajn i funkcionalnost kako biste istakli svoju
         kompaniju na online tržištu. Bez obzira da li ste mala firma, velika korporacija ili samostalni preduzetnik, mi smo tu da vam pomognemo da
         ostvarite svoje ciljeve putem interneta.">
@@ -36,6 +36,15 @@
 </head>
 
 <body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BJQQV0L4Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9BJQQV0L4Z');
+    </script>
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -221,25 +230,28 @@
     </div>
 
     <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
+    <div class="w3-content w3-container paddingKontakt" id="contact">
         <h3 class="w3-center">KONTAKT</h3>
         <p class="w3-center"><em>Ukoliko želite da nas kontaktirate radi potencijalne saradnje ili jednostavno želite
                 razmeniti ideje, možete to uraditi klikom na broj telefona ili putem mail-a</em></p>
 
         <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
+            <!-- <div class="w3-col m4 w3-container">
                 <img src="img/logo.png" alt="logo" class="w3-image w3-round" style="width:100%">
-            </div>
+            </div> -->
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom w3-margin-top">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Belgrade,
                     Serbia<br>
                     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-                    <a href="tel:+381658696541" class="w3-hover-text-black"> Telefon: +381 65 8696541</a><br>
+                    <a href="tel:+381658696541" class="w3-hover-text-black">+381 65 8696541</a><br>
                     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-                    <a href="mailto:webmajstori.agencija@gmail.com" class="w3-hover-text-black"> Email:
-                        webmajstori.agencija@gmail.com</a><br>
+                    <a href="mailto:webmajstori.agencija@gmail.com"
+                        class="w3-hover-text-black">webmajstori.agencija@gmail.com</a><br>
                 </div>
+            </div>
+            <div class="w3-col m4 w3-container ">
+                <img src="img/logo.png" alt="logo" class="w3-image w3-round" style="width:100%">
             </div>
         </div>
     </div>

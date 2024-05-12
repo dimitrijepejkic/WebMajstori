@@ -153,3 +153,8 @@ a {
 .margin-left {
     margin-left: 5px;
 }
+
+.paddingKontakt{
+    padding-top: 64px;
+    padding-bottom: 0;
+}

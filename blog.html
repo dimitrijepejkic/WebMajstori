@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <title>Blog | WebMajstori</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5a09e74771.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!-- VERIFICATION -->
+    <meta name="google-site-verification" content="TxXfR505iAaEFyF2x7mHguIrRZnYM41I7YlvRL8IHtY" />
+
+    <!-- SEO -->
+    <meta name="keywords"
+        content="kreiranje sajta, pravljenje sajta, pravljenje sajta za firmu, kako napraviti sajt, programer za sajt, kako napraviti sajt besplatno, izrada sajta, sajt, sajtova, webmajstori, webmaster, kreiranje web sajta, izrada web sajta">
+    <meta name="description" content="Naša misija je pružiti vam vrhunski dizajn i funkcionalnost kako biste istakli svoju
+        kompaniju na online tržištu. Bez obzira da li ste mala firma, velika korporacija ili samostalni preduzetnik, mi smo tu da vam pomognemo da
+        ostvarite svoje ciljeve putem interneta.">
+
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#0086ff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BJQQV0L4Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9BJQQV0L4Z');
+    </script>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button text-black"><i class="fa fa-home"></i> POČETNA</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small text-black"><i class="fa fa-user"></i>
+                O
+                NAMA</a>
+            <a href="index.html#pricing" class="w3-bar-item w3-button w3-hide-small text-black"><i
+                    class="fa fa-handshake-o"></i>
+                USLUGE</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small text-black"><i
+                    class="fa fa-th"></i>
+                PROJEKTI</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small text-black"><i class="fa fa-envelope"></i>
+                KONTAKT</a>
+            <a href="blog.html" class="w3-bar-item w3-button w3-hide-small text-black"><i
+                    class="fa-solid fa-shapes"></i>
+                BLOG</a>
+            <!-- <button id="languageChange" onclick="changeLanguage()"
+                class="w3-bar-item w3-button w3-hide-small w3-right">Change language:
+                <img id="flag" width="21px" src="img/united-kingdom.png" alt="United Kingdom Flag">
+            </button> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa fa-user"></i> O
+                NAMA</a>
+            <a href="index.html#pricing" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa fa-handshake-o"></i> USLUGE</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa fa-th"></i>
+                PROJEKTI</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i>
+                KONTAKT</a>
+            <a href="blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa-solid fa-shapes"></i>
+                BLOG</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1-blog w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BLOG</span>
+        </div>
+    </div>
+
+    <!-- Container (CLANAK 1) -->
+    <div class="w3-content w3-container w3-padding-64 shadowbox" id="seo">
+        <h2 class="w3-center">SEO</h2>
+        <!-- <p class="w3-center"><em>Volimo ono sto radimo!</em></p> -->
+        <p>
+            &ensp;<strong>SEO</strong> (Search Engine Optimization) je ključni faktor za uspeh bilo kog web sajta. Kada
+            je vaš sajt dobro
+            optimizovan za pretraživače, to može značajno poboljšati vašu vidljivost na internetu i privući više
+            posetilaca. <br> <br>
+        </p>
+        <h3>10 Saveta za Bolje SEO Optimizovane Web Sajtove:</h3>
+        <ol>
+            <li>
+                <h4>Odaberite Releventne Ključne Reči:</h4>
+                <p>
+                    Istražite ključne reči koje su relevantne za
+                    vašu nišu i ciljnu publiku. Koristite alate poput Google Keyword Planner-a kako biste pronašli
+                    popularne i relevantne termine koji se koriste u pretrazi.
+                </p>
+            </li>
+            <li>
+                <h4>Kreirajte Kvalitetan Sadržaj:</h4>
+                <p>
+                    Sadržaj je ključni faktor za SEO. Kreirajte
+                    originalan,
+                    relevantan i kvalitetan sadržaj koji će privući pažnju korisnika i inspirisati ih da se angažuju na
+                    vašem sajtu.
+                </p>
+            </li>
+            <li>
+                <h4>Optimizujte Meta Opise i Meta Tagove:</h4>
+                <p>
+                    Meta opisi i meta tagovi su važni jer
+                    pomažu pretraživačima da razumeju sadržaj vaše stranice. Pišite privlačne i informativne meta opise
+                    koji će privući klikove korisnika.
+                </p>
+            </li>
+            <li>
+                <h4>Optimizujte Slike:</h4>
+                <p>
+                    Slike mogu poboljšati korisničko iskustvo, ali takođe mogu
+                    uticati na brzinu učitavanja sajta ako nisu optimizovane. Obezbedite da imate alt tekst za svaku
+                    sliku koji opisuje njen sadržaj i koristite kompresiju slika kako biste smanjili veličinu fajlova.
+                </p>
+            </li>
+            <li>
+                <h4>Poboljšajte Brzinu Učitavanja Sajta:</h4>
+                <p>
+                    Brzina učitavanja sajta je važan faktor
+                    za SEO i korisničko iskustvo. Očistite nepotrebne skripte, smanjite veličinu fajlova i iskoristite
+                    keširanje kako biste ubrzali učitavanje svoje stranice.
+                </p>
+            </li>
+            <li>
+                <h4>Link Building:</h4>
+                <p>
+                    Izgradnja kvalitetnih povratnih veza (backlinks) može
+                    poboljšati autoritet vašeg sajta i povećati njegov rang na pretraživačima. Tražite prilike za
+                    gostujuće blogove, direktorijume i društvene medije kako biste izgradili relevantne i kvalitetne
+                    povratne veze.
+                </p>
+            </li>
+            <li>
+                <h4>Mobilna Optimizacija:</h4>
+                <p>
+                    Danas većina korisnika pristupa internetu putem mobilnih uređaja, stoga je važno da vaš sajt bude
+                    optimizovan za mobilne uređaje. Koristite responsivni dizajn i testirajte svoj sajt na različitim
+                    mobilnim uređajima kako biste osigurali da pružate dobro iskustvo korisnicima.
+                </p>
+            </li>
+            <li>
+                <h4>Redovno Ažurirajte Sadržaj:</h4>
+                <p>
+                    Redovno ažuriranje sadržaja vašeg sajta pokazuje pretraživačima da je vaš sajt aktivan i relevantan.
+                    Objavljujte nove članke, ažurirajte stare sadržaje i održavajte svoj sajt svežim i relevantnim.
+                </p>
+            </li>
+            <li>
+                <h4>Analizirajte Performanse:</h4>
+                <p>
+                    Koristite alate za analizu kao što su Google Analytics i Google Search Console kako biste pratili
+                    performanse vašeg sajta. Analizirajte ključne metrike poput broja poseta, stopa napuštanja i
+                    ključnih reči koje dovode posetioce na vaš sajt i prilagodite svoju strategiju SEO optimizacije
+                    prema potrebama.
+                </p>
+            </li>
+            <li>
+                <h4>Budite Strpljivi i Uporni:</h4>
+                <p>
+                    SEO nije brz proces i rezultati mogu potrajati. Budite strpljivi i uporni u svojim naporima za
+                    optimizaciju sajta i ne očekujte trenutne rezultate. Sa kontinuiranim radom i optimizacijom, vaš
+                    sajt će postepeno napredovati na pretraživačima i privući više posetilaca.
+                </p>
+            </li>
+        </ol>
+        <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+        <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div> -->
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64 bordertop" id="webdesign">
+        <h2 class="w3-center">Web Dizajn</h2>
+        <!-- <p class="w3-center"><em>Volimo ono sto radimo!</em></p> -->
+        <p>
+            Dizajn vašeg web sajta igra ključnu ulogu u privlačenju posetilaca i stvaranju pozitivnog korisničkog
+            iskustva. Savršen dizajn nije samo estetski privlačan, već odražava i identitet vašeg brenda, olakšava
+            navigaciju korisnicima i pomaže u postizanju ciljeva vašeg sajta.
+        </p>
+        <h3>Kako Izabrati Savršen Dizajn za Tvoj Web Sajt:</h3>
+        <ol>
+            <li>
+                <h4>Definišite Ciljeve Sajta:</h4>
+                <p>
+                    Pre nego što započnete proces dizajniranja, važno je da jasno definišete ciljeve vašeg sajta. Da li
+                    želite da prodajete proizvode ili usluge, delite informacije, prikupljate kontakte ili nešto drugo?
+                    Razumevanje svrhe vašeg sajta pomoći će vam da odaberete dizajn koji najbolje podržava ove ciljeve.
+                </p>
+            </li>
+            <li>
+                <h4>Upoznajte Vašu Ciljnu Publiku:</h4>
+                <p>
+                    Razumevanje ko su vaši korisnici i šta ih privlači ključno je za kreiranje dizajna koji će ih
+                    angažovati. Istražite demografske karakteristike vaše ciljne publike, njihove potrebe, želje i
+                    obrasce ponašanja na internetu kako biste kreirali dizajn koji će im odgovarati.
+                </p>
+            </li>
+            <li>
+                <h4>Brendiranje:</h4>
+                <p>
+                    Vaš web sajt treba da odražava identitet vašeg brenda. Razmislite o bojama, fontovima, logotipu i
+                    ostalim brending elementima koji će se koristiti na vašem sajtu kako biste osigurali doslednost sa
+                    vašom brending strategijom.
+                </p>
+            </li>
+            <li>
+                <h4>Koristite Responsivni Dizajn:</h4>
+                <p>
+                    Sa sve većim brojem korisnika koji pristupaju internetu putem mobilnih uređaja, važno je da vaš sajt
+                    bude optimizovan za sve veličine ekrana. Koristite responsivni dizajn kako biste osigurali da vaš
+                    sajt pruža dobro iskustvo korisnicima bez obzira na to koje uređaje koriste.
+                </p>
+            </li>
+            <li>
+                <h4>Jednostavnost Navigacije:</h4>
+                <p>
+                    Navigacija vašeg sajta treba da bude intuitivna i jednostavna za korišćenje. Koristite jasne menije
+                    i navigacione puteve kako biste omogućili korisnicima da lako pronađu željene informacije ili
+                    proizvode.
+                </p>
+            </li>
+            <li>
+                <h4>Fokus na Sadržaju:</h4>
+                <p>
+                    Sadržaj je ključni deo svakog web sajta, stoga dizajn treba da podržava i ističe sadržaj na vašem
+                    sajtu. Koristite dobro organizovane layout-e, vizualne elemente i tipografiju kako biste istakli vaš
+                    sadržaj i olakšali čitanje.
+                </p>
+            </li>
+            <li>
+                <h4>Testirajte i Prilagođavajte:</h4>
+                <p>
+                    Nakon što dizajnirate svoj sajt, važno je da testirate različite elemente i prikupite povratne
+                    informacije od korisnika. Analizirajte metrike kao što su stopa napuštanja, vreme provedeno na sajtu
+                    i konverzije kako biste identifikovali oblasti za poboljšanje i prilagodili dizajn prema potrebama
+                    korisnika.
+                </p>
+            </li>
+            <li>
+                <h4>Pratite Trendove:</h4>
+                <p>
+                    Web dizajn se stalno menja i evoluira, stoga je važno da pratite aktuelne trendove i prilagodite
+                    svoj dizajn kako biste ostali konkurentni. Razmotrite korišćenje modernih dizajnerskih tehnika, kao
+                    što su mikrointerakcije, paralaksa skrolovanje ili minimalistički dizajn, kako biste osigurali da
+                    vaš sajt ostane svež i privlačan.
+                </p>
+            </li>
+        </ol>
+    </div>
+
+    <!-- <div class="w3-row w3-center w3-padding-16 blue-white">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">14+</span><br>
+            Partnera
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">95+</span><br>
+            Projekta
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">89+</span><br>
+            Zadovoljnih klijenta
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br>
+            Sastanka
+        </div>
+    </div> -->
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container paddingKontakt" id="contact">
+        <h3 class="w3-center">KONTAKT</h3>
+        <p class="w3-center"><em>Ukoliko želite da nas kontaktirate radi potencijalne saradnje ili jednostavno želite
+                razmeniti ideje, možete to uraditi klikom na broj telefona ili putem mail-a</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <!-- <div class="w3-col m4 w3-container">
+                <img src="img/logo.png" alt="logo" class="w3-image w3-round" style="width:100%">
+            </div> -->
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom w3-margin-top">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Belgrade,
+                    Serbia<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                    <a href="tel:+381658696541" class="w3-hover-text-black">+381 65 8696541</a><br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                    <a href="mailto:webmajstori.agencija@gmail.com"
+                        class="w3-hover-text-black">webmajstori.agencija@gmail.com</a><br>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-container ">
+                <img src="img/logo.png" alt="logo" class="w3-image w3-round" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nazad na
+            početak</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.instagram.com/web.majstori/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.tiktok.com/@web.majstori" class="margin-left">
+                <i class="fa-brands fa-tiktok w3-text-white w3-hover-opacity"></i>
+            </a>
+        </div>
+        <p>Copyright &#169 2024 WebMajstori. Sva prava su zadržana. Developed by WebMajstori</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <!-- <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "5_5IPGtPa1plUnRORfXnt",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="5_5IPGtPa1plUnRORfXnt" domain="www.chatbase.co" defer>
+    </script> -->
+    <!-- <iframe src="https://www.chatbase.co/chatbot-iframe/5_5IPGtPa1plUnRORfXnt" title="Darko" width="100%"
+        style="height: 100%; min-height: 700px" frameborder="0"></iframe> -->
+
+</body>
+
+</html>

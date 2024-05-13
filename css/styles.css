@@ -36,6 +36,13 @@ a {
     min-width: 100%;
 }
 
+/* Blog image */
+.bgimg-1-blog {
+    background-image: url('../img/blog.jpg');
+    min-height: 100%;
+    min-width: 100%;
+}
+
 /* Second image (Portfolio) */
 .bgimg-2 {
     background-image: url("../img/background3.png");
@@ -154,7 +161,11 @@ a {
     margin-left: 5px;
 }
 
-.paddingKontakt{
+.paddingKontakt {
     padding-top: 64px;
     padding-bottom: 0;
+}
+
+.bordertop {
+    border-top: 1px solid #777;
 }
